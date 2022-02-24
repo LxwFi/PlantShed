@@ -9,31 +9,45 @@ import './App.css';
 
 function App() {
   return (
-    
     <div className="App">
       <header className="App-header">
-        <button onClick={App} class="imageButton">
+        <center>
           <img src={logo} className="Logo" alt="logo" />
-          </button>
+        </center>
         <p>
-          Click an image to navigate.
+          <b>Click an image to navigate.</b> 
         </p>
       </header>
       <body className='App-body'>
         <div class="row">
           <div class="column">
             <button onClick={coffee} class="imageButton">
+            <div class="img__wrap">
               <img src={coffeeImg} className="Coffee-Image" alt="Beans"/>
+                <div class="img__description_layer">
+                  <p class="img__description">Beans</p>
+                </div>
+            </div>
             </button>
           </div>
           <div class="column">
             <button onClick={plants} class="imageButton">
-            <img src={plantImg} className="Plants-Image" alt="Plants" />
+            <div class="img__wrap">
+              <img src={plantImg} className="Plants-Image" alt="Plants" />
+                <div class="img__description_layer">
+                  <p class="img__description">Plants</p>
+                </div>
+            </div>
             </button>
           </div>
           <div class="column">
             <button onClick={seeds} class="imageButton">
-            <img src={seedsImg} className="Seeds-Image" alt="Seeds" />
+            <div class="img__wrap">
+                <img src={seedsImg} className="Seeds-Image" alt="Seeds" />
+                <div class="img__description_layer">
+                  <p class="img__description">Seeds</p>
+                </div>
+            </div>
             </button>
           </div>
         </div>

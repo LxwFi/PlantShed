@@ -8,9 +8,12 @@ const coffee = () => {
     ReactDOM.render(
         <React.StrictMode>
             <NavBar />
+            <body>Coffee</body>
         </React.StrictMode>,
         document.getElementById('root')
-));
+)
+);
+
 }
 
 

@@ -8,6 +8,7 @@ const plants = () => {
     ReactDOM.render(
         <React.StrictMode>
             <NavBar />
+            <body>Plants</body>
         </React.StrictMode>,
         document.getElementById('root')
 ));
