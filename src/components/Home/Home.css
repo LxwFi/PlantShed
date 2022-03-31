@@ -1,6 +1,6 @@
-* {
-    background-color: #F4F1DE;
-  }
+body {
+  background-color: #F4F1DE;
+}
   
    .Home {
     text-align: center;
@@ -10,10 +10,12 @@
     top: 0px;
     right: 100px
   }
+
+  
   
   
   @media (min-width: 1250px) {
-    .column {
+    #Home .column {
       float: left;
       width: 33.33%;
     }

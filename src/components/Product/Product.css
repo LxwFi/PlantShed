@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+  }
+
+.product img {
+    width: 200px;
+    height: 300px;
+}
+
+.product h3 {
+    text-align: center;
+}
+
+/* Four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+
+    text-align: center;
+    background-color:aliceblue;
+    height: 570px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 1800px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+  .card-columns .card-body {
+    height: 100px;
+    font-family: 'Nunito', sans-serif;
+    background: #fbfafd;
+} 

@@ -6,7 +6,7 @@ import './Home.css';
 
 function Home() {
   return (
-    <div className="Home">
+    <div className="Home" id="Home">
       <header className="Home-header">
         <center>
           <img src={logo} className="Logo" alt="logo" />
@@ -18,7 +18,7 @@ function Home() {
       <body className='Home-body'>
         <div class="row">
           <div class="column">
-            <button class="imageButton">
+            <button class="imageButton" id="coffeeButton">
             <a href="./coffee">
             <div class="img__wrap">
               <img src={coffeeImg} className="Coffee-Image" alt="Beans"/>
@@ -30,10 +30,10 @@ function Home() {
             </button>
           </div>
           <div class="column">
-            <button class="imageButton">
+            <button class="imageButton"  id="plantButton">
             <a href="./plants">
             <div class="img__wrap">
-              <img src={plantImg} className="Plants-Image" alt="Plants" />
+              <img src={plantImg} className="Plants-Image" alt="Plants"/>
                 <div class="img__description_layer">
                   <p class="img__description">Plants</p>
                 </div>
@@ -42,7 +42,7 @@ function Home() {
             </button>
           </div>
           <div class="column">
-            <button class="imageButton">
+            <button class="imageButton" id="seedButton">
             <a href="./seeds">
             <div class="img__wrap">
                 <img src={seedsImg} className="Seeds-Image" alt="Seeds" />
