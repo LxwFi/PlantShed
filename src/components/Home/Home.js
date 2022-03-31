@@ -1,16 +1,13 @@
-import coffeeImg from './images/coffee.jpg';
-import plantImg from './images/plant.png';
-import seedsImg from './images/seeds.png';
-import logo from './images/plantshedlogo.png'
-import coffee from './pages/coffee';
-import plants from './pages/plants';
-import seeds from './pages/seeds';
-import './App.css';
+import coffeeImg from '../../images/coffee.jpg';
+import plantImg from '../../images/plant.png';
+import seedsImg from '../../images/seeds.png';
+import logo from '../../images/plantshedlogo.png'
+import './Home.css';
 
-function App() {
+function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="Home">
+      <header className="Home-header">
         <center>
           <img src={logo} className="Logo" alt="logo" />
         </center>
@@ -18,36 +15,42 @@ function App() {
           <b>Click an image to navigate.</b> 
         </p>
       </header>
-      <body className='App-body'>
+      <body className='Home-body'>
         <div class="row">
           <div class="column">
-            <button onClick={coffee} class="imageButton">
+            <button class="imageButton">
+            <a href="./coffee">
             <div class="img__wrap">
               <img src={coffeeImg} className="Coffee-Image" alt="Beans"/>
                 <div class="img__description_layer">
                   <p class="img__description">Beans</p>
                 </div>
             </div>
+            </a>
             </button>
           </div>
           <div class="column">
-            <button onClick={plants} class="imageButton">
+            <button class="imageButton">
+            <a href="./plants">
             <div class="img__wrap">
               <img src={plantImg} className="Plants-Image" alt="Plants" />
                 <div class="img__description_layer">
                   <p class="img__description">Plants</p>
                 </div>
             </div>
+            </a>
             </button>
           </div>
           <div class="column">
-            <button onClick={seeds} class="imageButton">
+            <button class="imageButton">
+            <a href="./seeds">
             <div class="img__wrap">
                 <img src={seedsImg} className="Seeds-Image" alt="Seeds" />
                 <div class="img__description_layer">
                   <p class="img__description">Seeds</p>
                 </div>
             </div>
+            </a>
             </button>
           </div>
         </div>
@@ -56,4 +59,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

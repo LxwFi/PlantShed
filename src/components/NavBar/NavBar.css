@@ -5,14 +5,14 @@
 .NavButtonO{
     font-size: 50px;
     margin: 50px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #da9073;
 }
 
 .NavButtonG{
     font-size: 50px;
     margin: 50px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #B2BC9C;  
     color: white;
 }
@@ -21,3 +21,9 @@
     height: 124px;
     width: 350px;
 }
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    background-color: inherit;
+  }
